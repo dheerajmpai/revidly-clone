@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Auxiliary/Auxiliary';
-import FeedsHeader from '../../components/Feeds/FeedsHeader';
+import FeedsHeader from '../../components/Feeds/FeedsHeader/FeedsHeader';
+import FeedItems from '../../components/Feeds/FeedItems/FeedItems';
+import classes from './Feeds.module.css';
 
 class Feeds extends Component {
     render() {
-        return <Aux>
+        return <div className={classes.Feeds}>
             <FeedsHeader />
-        </Aux>
+            <FeedItems />
+        </div>
     }
 }
 
