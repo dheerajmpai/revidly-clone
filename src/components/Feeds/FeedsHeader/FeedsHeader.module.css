@@ -11,3 +11,26 @@
     box-sizing: border-box;
     border-bottom: 1px solid #cccccc;
 }
+.FeedsHeader__searchbox {
+    position: relative;
+    flex-basis: 85%;
+    height: 100%;
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.FeedsHeader__searchbox > .Icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FeedsHeader__searchbox > input {
+    border: none;
+    outline: none;
+}
