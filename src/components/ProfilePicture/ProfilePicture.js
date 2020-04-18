@@ -1,4 +1,5 @@
 import React from 'react';
+import profileImage from '../../assets/images/profile-image.png';
 import classes from './ProfilePicture.module.css';
 
 const profilePicture = (props) => {
@@ -6,7 +7,9 @@ const profilePicture = (props) => {
     if(props.size === 'small') {
         classNames.push(classes['ProfilePicture--small']);
     }
-    return <div className={classNames.join(' ')}></div>
+    return <div className={classNames.join(' ')}>
+        <img src={profileImage} />
+    </div>
 }
 
 export default profilePicture;
